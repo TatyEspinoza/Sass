@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Raleway:wght@300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;1,300;1,400&family=Sintony:wght@400;700&display=swap');
+
+$font-family-base: "Lato", monospace;
+
+.miBg-dark-mi {
+
+  @extend .bg-dark;
+  color: white;
+}
+
+.text-light-mi {
+  @extend .text-light;
+  color: #808080;
+}
+
+// scss-docs-start theme-color-variables
+$primary: rgb(161, 76, 187);
+$secondary: #800080;
+$success: #00008b;
+$info: #008b8b;
+$warning: #ff1493;
+$danger: #daa520;
+$light: #808080;
+$dark: #000000;
+$purple: #cf649a;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+  "purple": $purple
+  ) !default;
+// scss-docs-end theme-colors-map
+
+
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
